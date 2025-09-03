@@ -77,6 +77,16 @@
                     </div>
                 </div>
             </section>
+            <section>
+                <div class="queue-status">
+                    <h2>現在の待ち人数</h2>
+                    <!-- 人数は手動で書き換え -->
+                    <p class="count red">12人</p>
+                    
+                    <!-- 更新ボタン（今はデザインだけ） -->
+                    <button class="refresh-btn">更新</button>
+                </div>
+            </section>
             <section id="toiawase">
                 <div class="fv-contact-div">
                     <div class="fv-contact-div-div">
@@ -94,14 +104,14 @@
 
 
                         <form action="">
-                            <p>
-                                <label class="name" for="">お名前</label>
+                            <!--<p>
+                                <label class="name" for="">お名前</label>-->
                                 <!-- inputの横に「必須」の文字を入れたい -->
                                 <!-- そのためにはpractice02でも使った”擬似要素”というものを使う -->
                                 <!-- 擬似要素はCSS上で設定する。 -->
                                 <!-- 擬似要素は閉じタグがついてるタグの前後に設定できる。inputタグには閉じタグがないので、labelタグに擬似要素を追加する。 -->
                                 <!-- 詳しくはCSS上のコメントアウトを参照 -->
-                                <input type="text" class="form" name="your_name">
+                                <!--<input type="text" class="form" name="your_name">
                             </p>
                             <p>
                                 <label class="maleadress" for="">メールアドレス</label>
@@ -110,7 +120,7 @@
                             <p>
                                 <label class="message" for="">メッセージ内容</label>
                                 <textarea name="message" class="form" id="" cols="30" rows="10"></textarea>
-                            </p>
+                            </p>-->
                             <p class="fv-contact-button"><button>問い合わせる</button></p>
                         </form>
 
