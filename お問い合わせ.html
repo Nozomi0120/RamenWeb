@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>めん処　澄 | お問い合わせ</title>
+  <link rel="stylesheet" href="s_web2.css">
+</head>
+
+<body>
+  <header>
+    <h1>めん処　澄</h1>
+    <nav>
+      <a href="s_web2.html">ホーム</a>
+      <a href="s_web2.html">店舗情報</a>
+      <a href="s_web2.html">アクセス</a>
+      <a href="お問い合わせ.html">お問い合わせ</a>
+    </nav>
+  </header>
+
+  <main>
+    <form class="contact-form" action="thanks.html" method="get">
+      <h2>お問い合わせ</h2>
+      <label for="name">お名前 <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">メールアドレス <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">電話番号（任意）</label>
+      <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
+      <label for="category">お問い合わせ種別 <span class="required">*</span></label>
+      <select id="category" name="category" required>
+        <option value="">選択してください</option>
+        <option value="reservation">ご予約について</option>
+        <option value="menu">メニューについて</option>
+        <option value="allergy">アレルギーについて</option>
+        <option value="other">その他</option>
+      </select>
+
+      <label for="message">お問い合わせ内容 <span class="required">*</span></label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <label class="consent">
+        <input type="checkbox" required> プライバシーポリシーに同意します
+      </label>
+
+      <button type="submit">送信</button>
+    </form>
+  </main>
+
+  <footer>
+    <p>&copy; めん処　澄</p>
+  </footer>
+</body>
+</html>
