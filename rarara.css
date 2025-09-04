@@ -200,7 +200,7 @@ header p {
 /* fv-contact お問い合わせフォームここから*/
 .fv-contact-div {
     background-color:#F2F1F0;
-    height: 660px;
+    height: 250px;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -441,3 +441,16 @@ textarea{
   background-color: #727272;
 }
 
+/* メニュー */
+img {
+    width:1000px;
+    border-radius: 0px;
+    margin: 0 auto;       
+      width: 400px;      
+      height: auto;
+  }
+  .fade-in {
+    opacity: 0;
+    transform: translateY(20px);
+    animation: fadeUp 10s ease-out forwards;
+  }
