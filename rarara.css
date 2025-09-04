@@ -136,11 +136,10 @@ header p {
   color: #666;
 }
 
-.store-photo im
 .store-photo img {
   display: block;
   width: 100%;
-  max-width: 900px;
+  max-width: 500px;
   margin: 0 auto;
   border-radius: 8px;
 }
@@ -310,7 +309,7 @@ textarea{
 
 .contact-form h2 {
   text-align: center;
-  color: #dff6fa;
+  color: #15cff0;
 }
 
 .contact-form label {
@@ -330,7 +329,7 @@ textarea{
 }
 
 .contact-form .required {
-  color: #dff6fa;
+  color: #2aceeb;
 }
 
 .contact-form .consent {
@@ -343,14 +342,14 @@ textarea{
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #dff6fa;
+  background-color: #38defb;
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #dff6fa;
+  background-color: #80e0f1;
 }
 
 /* サンクスページ */
@@ -442,16 +441,23 @@ textarea{
 }
 
 /* メニュー */
-img {
-    width:1000px;
-    border-radius: 0px;
-    margin: 0 auto;       
-      width: 400px;      
-      height: auto;
-  }
-  .fade-in {
-    opacity: 0;
-    transform: translateY(20px);
-    animation: fadeUp 10s ease-out forwards;
-  }
-  
+.menu_photo{
+  display: flex;
+  justify-content: space-around;
+}
+.menu_photo img {
+  width:1000px;
+  border-radius: 0px;
+  margin: 0 auto;       
+  width: 400px;      
+  height: auto;
+}
+.menu_p{
+  display: flex;
+  justify-content: space-around;
+}
+/*.fade-in img {
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeUp 10s ease-out forwards;
+}*/
