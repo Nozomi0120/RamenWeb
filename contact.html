@@ -21,12 +21,6 @@
   <main>
     <form class="contact-form" action="thanks.html" method="get">
       <h2>お問い合わせ</h2>
-      <label for="name">お名前 <span class="required">*</span></label>
-      <input type="text" id="name" name="name" required>
-      <label for="email">メールアドレス <span class="required">*</span></label>
-      <input type="email" id="email" name="email" required>
-      <label for="phone">電話番号（任意）</label>
-      <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
       <label for="category">お問い合わせ種別 <span class="required">*</span></label>
       <select id="category" name="category" required>
         <option value="">選択してください</option>
@@ -35,13 +29,21 @@
         <option value="allergy">アレルギーについて</option>
         <option value="other">その他</option>
       </select>
+      <label for="name">お名前 <span class="required">*</span></label>
+      <input type="text" id="name" name="name" required>
+      <label for="email">メールアドレス <span class="required">*</span></label>
+      <input type="email" id="email" name="email" required>
+      <label for="phone">電話番号（任意）</label>
+      <input type="tel" id="phone" name="phone" placeholder="090-1234-5678">
 
       <label for="message">お問い合わせ内容 <span class="required">*</span></label>
       <textarea id="message" name="message" rows="5" required></textarea>
-
-      <label class="consent">
-        <input type="checkbox" required> プライバシーポリシーに同意します
-      </label>
+      
+      <div class="checkbox">
+        <label class="consent">
+          <input type="checkbox" required> プライバシーポリシーに同意します
+        </label>
+      </div>
 
       <button type="submit">送信</button>
     </form>

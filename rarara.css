@@ -52,7 +52,7 @@ img {
 }
 
 input{
-    width: 330px;
+    width: 100px;
     height: 30px;
 }
 textarea {
@@ -362,41 +362,41 @@ textarea{
 /* 擬似要素を設定していく */
 /* 要素::afterは要素の後ろに擬似要素を設定するということを意味する。ちなみに::beforeは前に設定 */
 /* 設定の方法は通常のCSSでHTMLに装飾を施す手順と同じなので難しくない。 */
-.name::after{
+/*.name::after{*/
     /* 挿入したい内容を指定 */
-    content: '必須';
+    /*content: '必須';*/
 
     /* ”お名前”から距離を指定 */
-    margin-right: 24px;
-    margin-left: 138px;
+    /*margin-right: 24px;
+    margin-left: 138px;*/
     /* 文字の大きさ */
-    font-size: 16px;
+    /*font-size: 16px;*/
     /* 文字の色 */
-    color: aliceblue;
+    /*color: aliceblue;*/
     /* 線の曲線率 */
-    border-radius: 2px;
-    /* 背景色 */
-}
+    /*border-radius: 2px;*/
+    /* 背景色 *//*
+}*/
 
 /* お問い合わせページ */
 .contact-form {
-  max-width: 400px;
-  margin: 30px auto;
-  padding: 20px;
-  border: 2px solid #dff6fa;
+  max-width: 600px;
+  margin: 0px auto;
+  padding: 0px;
+  /*border: 2px solid #000000;
   border-radius: 10px;
-  background-color: #fff;
+  background-color: #fff;*/
   text-align: left;
 }
 
 .contact-form h2 {
   text-align: center;
-  color: #15cff0;
+  color: #000000;
 }
 
 .contact-form label {
   display: block;
-  margin: 10px 0 10px;
+  margin: 30px 0 30px;
   font-weight: bold;
 }
 
@@ -408,15 +408,26 @@ textarea{
   margin-bottom: 10px;
   border: 1px solid #ccc;
   border-radius: 5px;
+  display: flex;
+}
+.checkbox{
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
 }
 
 .contact-form .required {
-  color: #2aceeb;
+  color: #f40000;
 }
 
 .contact-form .consent {
   font-size: 14px;
-  margin: 10px 0;
+  margin: 15px 0;
+  display: flex;
+  margin-right: 5px;
 }
 
 .contact-form button {
@@ -424,14 +435,14 @@ textarea{
   padding: 10px;
   border: none;
   border-radius: 5px;
-  background-color: #6fe7fc;
+  background-color: #a6a6a6;
   color: white;
   font-size: 16px;
   cursor: pointer;
 }
 
 .contact-form button:hover {
-  background-color: #64d8ec;
+  background-color: #727272;
 }
 
 /* サンクスページ */
