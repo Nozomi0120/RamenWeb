@@ -34,8 +34,8 @@ body {
 }
 
 .header-div {
-
-  background:#fffff0;
+  background:#ffffff;
+  border-bottom: 1.5px solid #ccc;
 }
 
 .header-h1{
@@ -283,7 +283,6 @@ textarea {
 }
 
 .section-div-div-h1{
-
   color: aliceblue;
   font-family: "Shippori Mincho", serif;
   font-weight: 700;
@@ -313,6 +312,8 @@ header {
 
 header h1 {
   font-size: 2rem;
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
   margin-bottom: 0.5rem;
 }
 
@@ -393,6 +394,8 @@ header p {
     text-align: center;
 }
 .fv-contact-div-h2{
+    font-family: "Shippori Mincho", serif;
+    font-weight: 700;
     font-size: 28px;
     text-align: center;
     margin-bottom: 32px;
