@@ -83,16 +83,16 @@ textarea {
 
 .haikei{
     /* 背景に画像を指定 */
-    background: url(salt_ramen.jpg);
+    /*background: url(salt_ramen.jpg);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
     /* widthとheightでメインビジュアルのサイズを指定 */
     width: 100%;
     height: 400px; /* 灰色とメニュー一覧との距離 */
 }
 .bokashi {
     /* 背景に黒いぼかしを入れる */
-    background-color: rgba(51, 51, 51, 72%);
+    background-color: rgba(172, 172, 172, 0.72);
     /* しかし、この時点でボカシは子要素（文字とうどんの画像）が存在している範囲にしか効かない */
 
     /* ぼかしを背景全面に効かせたい*/
@@ -106,8 +106,51 @@ textarea {
     align-items: center;
 }
 
-/* スライドショー枠 
-.slideshow {
+/*.slideshow {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+.slide {
+  position: absolute;
+  width: 60%;
+  height: 60%;
+  background-size: cover;
+  background-position: center;
+  opacity: 0;
+  animation: fade 12s infinite;
+  display: flex;
+}
+.slide:nth-child(1) {
+  background-image: url('salt_ramen.jpg');
+  animation-delay: 0s;
+}
+.slide:nth-child(2) {
+  background-image: url('shoyu_ramen.jpg');
+  animation-delay: 4s;
+}
+.slide:nth-child(3) {
+  background-image: url('tukemen.jpg');
+  animation-delay: 8s;
+}
+
+@keyframes fade {
+  0%   { opacity: 0; }
+  8%   { opacity: 1; }
+  25%  { opacity: 1; }
+  33%  { opacity: 0; }
+  100% { opacity: 0; }
+}*/
+
+
+
+
+
+/* スライドショー枠 */
+/*.slideshow {
   position: relative;
   width: 50%;
   max-width: 600px;
@@ -115,7 +158,8 @@ textarea {
   margin: auto;
   overflow: hidden;
   border-radius: 50px; *//* スライドショーの角の丸み */
-  /*background-color: #000;
+  /*background-color: #fffcfc;
+  z-index: -1;
 }*/
 
 /*body{
@@ -132,17 +176,17 @@ textarea {
 }*/
 
 /* 共通画像設定 */
-.slideshow {
+/*.slideshow {
   position: absolute;
   width: 100%;
   height: 100%;
   object-fit: cover;
   opacity: 0;
-  animation: fade 9s infinite; /* 6枚 × 3秒 = 18秒で1周 */
+  animation: fade 9s infinite;*/ /* 6枚 × 3秒 = 18秒で1周 */
   /*background-size: cover;
   background-position: center;
-  transition: opacity 1s ease-in-out;*/
-}
+  transition: opacity 1s ease-in-out;*//*
+}*/
 
 /*.salt{
   background-image: url('salt_ramen.jpg');
@@ -157,9 +201,9 @@ textarea {
 }*/
 
 /* 各画像の表示タイミング */
-.slideshow img:nth-child(1) { animation-delay: 0s; }
+/*.slideshow img:nth-child(1) { animation-delay: 0s; }
 .slideshow img:nth-child(2) { animation-delay: 3s; }
-.slideshow img:nth-child(3) { animation-delay: 6s; }
+.slideshow img:nth-child(3) { animation-delay: 6s; }*/
 
 /*.slide:nth-child(1) { 
   animation: slideshow 9s infinite; 
@@ -172,11 +216,11 @@ textarea {
 }*/
 
 /* フェード効果 */
-@keyframes fade {
-    0%, 100% { opacity: 0; }
-    10%, 30% { opacity: 1; }
-    33%, 100% { opacity: 0; }
-}
+/*@keyframes fade {
+  0%, 100% { opacity: 0; }
+  10%, 30% { opacity: 1; }
+  33%, 100% { opacity: 0; }
+}*/
 
 /*@keyframes fade {
     0%{ opacity: 0; }
@@ -185,21 +229,60 @@ textarea {
     80%{ opacity: 0; }
     100%{ opacity: 0; }
 }*/
+
+/* スライドショー枠 */
+.slideshow {
+    position: relative;
+    width: 100%;
+    max-width: 660px;
+    aspect-ratio: 5 / 3;
+    margin: auto;
+    overflow: hidden;
+    /*border-radius: 10px;
+    background-color: #000000;*/
+    z-index: -1;
+    margin-left: 300px;
+}
+
+/* 共通画像設定 */
+.slideshow img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    opacity: 0;
+    animation: fade 9s infinite; /* 3枚 × 3秒 = 9秒で1周 */
+}
+
+/* 各画像の表示タイミング */
+.slideshow img:nth-child(1) { animation-delay: 0s; }
+.slideshow img:nth-child(2) { animation-delay: 3s; }
+.slideshow img:nth-child(3) { animation-delay: 6s; }
+
+/* フェード効果 */
+@keyframes fade {
+    0%, 100% { opacity: 0; }
+    10%, 30% { opacity: 1; }
+    33%, 100% { opacity: 0; }
+}
+
 .section-div-div-h1{
-  color: aliceblue;
+  color: black;
   font-size: 44px; /* どんどこうどんの文字のサイズ */
   margin-bottom: 16px; /* どんどことサブタイトルの距離 */
   margin-right: 27px; /* 横にかけるサイズ */
   text-align: center;
+  margin-left: 150px;
 }
 .section-div-div-p{
-  color: aliceblue;
+  color: black;
   font-size: 24px; /* サブタイトルのサイズ */
   margin-top: 0px; /* どんどことサブタイトルの距離 */
   text-align: center;
+  margin-left: 150px;
 }
 .section-div-img {
-  margin-left: 24px;
+  margin-left: 0px;
 }
 
 /* 情報ここから */
