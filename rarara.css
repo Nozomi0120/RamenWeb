@@ -25,11 +25,25 @@ body {
     margin: 0;
 }
 
+.header-div {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+
+.header-div {
+
+  background:#fffff0;
+}
+
 .header-h1{
     white-space: nowrap;
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
-    font-size:xx-large;
+    margin-top: 8px;
+    font-size:42px;
     margin-left: 10px;
 }
 
@@ -40,6 +54,12 @@ body {
     font-size: large;
     border-left: 1px solid #aaa;
     padding-left: 20px;
+}
+
+.header-a {
+  position: relative;
+  z-index: 10;
+  pointer-events: auto;
 }
 
 .header-a:first-child {
@@ -67,9 +87,7 @@ textarea {
     justify-content: space-between;
     align-items: center;
 }
-.header-h2 {
-    margin-left: 50px;
-}
+
 .header-p{
     margin-right: 5px;
 }
@@ -83,6 +101,7 @@ textarea {
 
 .haikei{
     /* 背景に画像を指定 */
+    margin-top: 20px;
     background: url(salt_ramen.jpg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -187,15 +206,18 @@ textarea {
 }*/
 .section-div-div-h1{
   color: aliceblue;
-  font-size: 44px; /* どんどこうどんの文字のサイズ */
-  margin-bottom: 16px; /* どんどことサブタイトルの距離 */
-  margin-right: 27px; /* 横にかけるサイズ */
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+  font-size:65px;
+  margin-bottom: 16px;
   text-align: center;
 }
 .section-div-div-p{
   color: aliceblue;
-  font-size: 24px; /* サブタイトルのサイズ */
-  margin-top: 0px; /* どんどことサブタイトルの距離 */
+  font-family:"Shippori Mincho", serif;
+  font-weight: 400;
+  font-size: 25px; 
+  margin-top: 0px;
   text-align: center;
 }
 .section-div-img {
@@ -331,32 +353,12 @@ textarea{
     font-weight: 400;
 }
 
-.footer-div-div-a {
-  border-left: 1px solid #aaa;
-  padding-left: 25px;
-  color: #333;
-  text-decoration: none;
-  margin: 0 10px;
-  font-family: "Shippori Mincho", serif;
-  font-weight: 400;
-  font-size: large;
-}
-
-.footer-div-div-a:first-child {
-  border-left: none;
-  padding-left: 0; 
-}
-
 .footer-div-div-p2{
     margin-left: 10px;
+    color:#000000;
     font-family: "Shippori Mincho", serif;
     font-weight: 400;
     font-size:small;
-}
-
-.footer-div-div-a:first-child {
-  border-left: none;
-  padding-left: 0; 
 }
 
 /* 擬似要素を設定していく */
