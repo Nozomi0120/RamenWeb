@@ -304,6 +304,22 @@ textarea {
   margin-left: 0px;
 }
 
+.salt{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+.shoyu{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+.tuke{
+  display: flex;
+  flex-flow: column;
+  text-align: center;
+}
+
 /* 情報ここから */
 header {
   text-align: center;
@@ -320,6 +336,16 @@ header h1 {
 header p {
   font-size: 1rem;
   color: #666;
+}
+
+.menu_ramen{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 700;
+}
+
+.description{
+  font-family: "Shippori Mincho", serif;
+  font-weight: 400;
 }
 
 .store-photo img {
