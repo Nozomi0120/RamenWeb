@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="ja">
+
     <head>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,32 +9,31 @@
         <link rel="stylesheet" type="text/css" href="rarara.css" media="all">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap" rel="stylesheet">
-        <!-- 下はしっぽり明朝のリンク-->
+        <link href="https://fonts.googleapis.com/css2?family=Kaisei+HarunoUmi:wght@400;700&display=swap"
+            rel="stylesheet">
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap" rel="stylesheet">
-        <!-- Kaisei HarunoUmiのフォントはブラウザで標準に入っていないので、google fontを使用する。 -->
+        <link href="https://fonts.googleapis.com/css2?family=Shippori+Mincho:wght@400;700&display=swap"
+            rel="stylesheet">
     </head>
+
     <body>
-        <!-- ヘッダー　ここから -->
-        <!-- practice01,02のヘッダーと構成が同じ -->
         <header>
             <div class="header-div">
                 <h1 class="header-h1">
                     めん処 澄
                 </h1>
                 <p class="header-p">
-                    <a class="header-a" href="#menyu-">
+                    <a class="header-a" href="#menu_jump">
                         メニュー
                     </a>
-                    <a class="header-a" href="">
-                        アクセス
-                    </a>
-                    <a class="header-a" href="">
+                    <a class="header-a" href="#info_jump">
                         店舗情報
                     </a>
-                    <a class="header-a" href="#toiawase">
+                    <a class="header-a" href="#queue_jump">
+                        待ち人数
+                    </a>
+                    <a class="header-a" href="#contact_jump">
                         お問い合せ
                     </a>
                 </p>
@@ -42,7 +42,6 @@
         <!-- ヘッダー　ここまで -->
 
         <!-- メインコンテンツ　ここから -->
-
         <main>
             <section>
                 <!-- divを複数重ねて各div（各階層）で役割を分担するイメージ -->
@@ -87,8 +86,8 @@
             <!--<head>
   <title>店舗情報 | めん処 澄</title>
   <link rel="stylesheet" href="style00.css">-->
-  <!-- はんなり明朝 -->
-  <!--<link href="https://fonts.googleapis.com/css2?family=Hannari&display=swap" rel="stylesheet">
+            <!-- はんなり明朝 -->
+            <!--<link href="https://fonts.googleapis.com/css2?family=Hannari&display=swap" rel="stylesheet">
 </head>
 <body>
   <header>
@@ -126,7 +125,7 @@
         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9481120287033!2d139.7003023152582!3d35.689634980192514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd9b6c9d4e7%3A0x2f83b9f3d1e7f1c3!2z5paw5a6_5Zub44K144Oz44K344Oz44K_44O844K644Or!5e0!3m2!1sja!2sjp!4v1695488400000!5m2!1sja!2sjp"
         width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
     </section>-->
-            <section id="menyu-">
+            <section id="menu_jump">
                 <!--<div class="fv-center-div">
                     <div class="fv-center-div2">
                         <h2 class="fv-center-div-h2">
@@ -147,9 +146,9 @@
                 </header>
                 <main>
                     <div class="menu_photo">
-                        <img src="salt_ramen.jpg"class="store-photo" alt="">
+                        <img src="salt_ramen.jpg" class="store-photo" alt="">
                         <img src="shoyu_ramen.jpg" class="fade-in delay1" alt="">
-                        <img src="tukemen.jpg"class="fade-in" alt="">
+                        <img src="tukemen.jpg" class="fade-in" alt="">
                     </div>
                     <!--<div style="display: flex; flex-direction: column; align-items: flex-end;">-->
                     <div class="menu_p">
@@ -159,80 +158,68 @@
                     </div>
                 </main>
             </section>
-            <section id="tennpo">
-                <head>
-                    <title>店舗情報 | めん処 澄</title>
-                    <link rel="stylesheet" href="style00.css">
-                    <!-- はんなり明朝 -->
-                    <link href="https://fonts.googleapis.com/css2?family=Hannari&display=swap" rel="stylesheet">
-                </head>
-                <body>
+            <section id="info_jump">
                 <header>
                     <h1>店舗情報</h1>
                     <p>一杯に、心ほぐれるひとときを。</p>
                 </header>
-
                 <main>
-                <section class="store-photo">
-                    <img src="store.jpg" alt="めん処 澄 外観写真" class="store-image" width="1824" height="316">
-                </section>
-                <section class="info-cards">
-                    <div class="card">
-                        <h2>所在地</h2>
-                        <p>〒123-4567 東京都新宿区〇〇1-2-3<br>
-                        めん処 澄 新宿本店</p>
-                    </div>
-                    <div class="card">
-                        <h2>営業時間</h2>
-                        <p>月〜金　11:00〜15:00 / 17:00〜22:00<br>(L.O 21:30)<br>土・日・祝　11:00〜22:00（通し営業 / L.O 21:30）<br>定休日：火曜日<br>電話：03-1234-5678</p>
-                    </div>
-                    <div class="card">
-                        <h2>アクセス</h2>
-                        <p>JR「新宿」東口より徒歩5分<br>東京メトロ丸ノ内線「新宿三丁目」A1出口より徒歩4分<br>駐車場：近隣コインパーキングをご利用ください</p>
-                    </div>
-                </section>
-                <section class="map">
-                    <h2>Googleマップ</h2>
-                    <iframe 
-                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9481120287033!2d139.7003023152582!3d35.689634980192514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd9b6c9d4e7%3A0x2f83b9f3d1e7f1c3!2z5paw5a6_5Zub44K144Oz44K344Oz44K_44O844K644Or!5e0!3m2!1sja!2sjp!4v1695488400000!5m2!1sja!2sjp"
-                        width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </section>
-            </section>
-            <section>
+                    <section class="store-photo">
+                        <img src="store.jpg" alt="めん処 澄 外観写真" class="store-image" width="1824" height="316">
+                    </section>
+                    <section class="info-cards">
+                        <div class="card">
+                            <h2>所在地</h2>
+                            <p>〒123-4567 東京都新宿区〇〇1-2-3<br>
+                                めん処 澄 新宿本店</p>
+                        </div>
+                        <div class="card">
+                            <h2>営業時間</h2>
+                            <p>月〜金　11:00〜15:00 / 17:00〜22:00<br>(L.O 21:30)<br>土・日・祝　11:00〜22:00（通し営業 / L.O
+                                21:30）<br>定休日：火曜日<br>電話：03-1234-5678</p>
+                        </div>
+                        <div class="card">
+                            <h2>アクセス</h2>
+                            <p>JR「新宿」東口より徒歩5分<br>東京メトロ丸ノ内線「新宿三丁目」A1出口より徒歩4分<br>駐車場：近隣コインパーキングをご利用ください</p>
+                        </div>
+                    </section>
+                    <section class="map">
+                        <h2>Googleマップ</h2>
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3241.9481120287033!2d139.7003023152582!3d35.689634980192514!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188cd9b6c9d4e7%3A0x2f83b9f3d1e7f1c3!2z5paw5a6_5Zub44K144Oz44K344Oz44K_44O844K644Or!5e0!3m2!1sja!2sjp!4v1695488400000!5m2!1sja!2sjp"
+                            width="100%" height="400" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    </section>
+                </main>
+            <section id="queue_jump">
                 <div class="queue-status">
                     <h2>現在の待ち人数</h2>
                     <!-- 人数は手動で書き換え -->
                     <p class="count red">12人</p>
-                    
+
                     <!-- 更新ボタン（今はデザインだけ） -->
                     <button class="refresh-btn">更新</button>
                 </div>
             </section>
-            <section id="toiawase">
+            <section id="contact_jump">
                 <div class="fv-contact-div">
                     <div class="fv-contact-div-div">
-                        <h2 class="fv-contact-div-h2">
+                        <h2 class="fv-contact-div-h2" id="contact">
                             お問い合せ
                         </h2>
                         <p class="fv-contact-div-p">
                             お問い合わせは以下からお願いします。
                         </p>
-                        <!-- 基本的なフォームの書き方。 -->
-
-                        <!-- まずはHTMLだけ記述してみよう -->
-                        <!-- その次に擬似要素以外のCSSを設定してみよう -->
-                        <!-- 最後に擬似要素の使い方を理解しよう。 -->
 
 
                         <form action="">
                             <!--<p>
                                 <label class="name" for="">お名前</label>-->
-                                <!-- inputの横に「必須」の文字を入れたい -->
-                                <!-- そのためにはpractice02でも使った”擬似要素”というものを使う -->
-                                <!-- 擬似要素はCSS上で設定する。 -->
-                                <!-- 擬似要素は閉じタグがついてるタグの前後に設定できる。inputタグには閉じタグがないので、labelタグに擬似要素を追加する。 -->
-                                <!-- 詳しくはCSS上のコメントアウトを参照 -->
-                                <!--<input type="text" class="form" name="your_name">
+                            <!-- inputの横に「必須」の文字を入れたい -->
+                            <!-- そのためにはpractice02でも使った”擬似要素”というものを使う -->
+                            <!-- 擬似要素はCSS上で設定する。 -->
+                            <!-- 擬似要素は閉じタグがついてるタグの前後に設定できる。inputタグには閉じタグがないので、labelタグに擬似要素を追加する。 -->
+                            <!-- 詳しくはCSS上のコメントアウトを参照 -->
+                            <!--<input type="text" class="form" name="your_name">
                             </p>
                             <p>
                                 <label class="maleadress" for="">メールアドレス</label>
@@ -254,28 +241,27 @@
         <!-- メインコンテンツ　ここまで -->
 
         <!-- フッター　ここから -->
-        <!-- これまで作ってきたヘッダーと同じ構成 -->
         <footer>
             <div class="footer-div">
                 <p class="footer-div-p">
-                    
+
                 </p>
                 <div class="footer-div-div">
                     <p>
                         <a class="footer-div-div-a" href="">
                             ホーム
                         </a>
-                        <a class="footer-div-div-a" href="#menyu-">
+                        <a class="footer-div-div-a" href="#menu_jump">
                             メニュー
                         </a>
-                        <a class="footer-div-div-a" href="">
-                            アクセス
-                        </a>
-                        <a class="footer-div-div-a" href="">
+                        <a class="footer-div-div-a" href="#info_jump">
                             店舗情報
                         </a>
-                        <a class="footer-div-div-a" href="#toiawase">
-                            お問い合わせ
+                        <a class="footer-div-div-a" href="#queue_jump">
+                            待ち人数
+                        </a>
+                        <a class="footer-div-div-a" href="#contact_jump">
+                            お問い合せ
                         </a>
                     </p>
                     <p class="footer-div-div-p2">
@@ -287,3 +273,6 @@
         <!-- フッター　ここまで -->
 
         <script type="text/javascript" src="assets/base.js"></script>
+    </body>
+
+</html>
